@@ -1,5 +1,5 @@
 
-/def_loc{py_loc = dir(file) + "/net/http.py"}
+/def_loc{py_loc = dir(interpreter_path) + "/packages/http/http.py"}
 
 /ping{@def_loc|call(py_loc, "ping", arg1)}
 
