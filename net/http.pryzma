@@ -1,0 +1,6 @@
+
+/def_loc{py_loc = dir(file) + "/net/http.py"}
+
+/ping{@def_loc|call(py_loc, "ping", arg1)}
+
+/download{@def_loc|call(py_loc, "download", arg1)}
