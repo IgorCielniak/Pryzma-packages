@@ -1,0 +1,1 @@
+{"name": "net", "version": "1.0.0", "files": ["net.pryzma", "net.py"], "author": "Igor Cielniak", "description": "Basic networking library for Pryzma programming language.", "license": "MIT"}

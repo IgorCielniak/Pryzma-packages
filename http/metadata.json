@@ -1,1 +1,0 @@
-{"name": "net", "version": "1.0.0", "files": ["http.pryzma", "http.py"], "author": "Igor Cielniak", "description": "Basic netorking library for Pryzma programming language.", "license": "MIT"}
