@@ -7,3 +7,8 @@ def download(variables, url):
     response = urllib.request.urlopen(url)
     response = response.read()
     variables["response"] = response
+
+def http_post(variables, url, data):
+    import requests
+    response = requests.post(url, json = data)             
+    variables["response"] = response

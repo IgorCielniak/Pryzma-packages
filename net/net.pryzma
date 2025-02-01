@@ -4,3 +4,5 @@
 /ping{@def_loc|call(py_loc, "ping", arg1)}
 
 /download{@def_loc|call(py_loc, "download", arg1)}
+
+/http_post{@def_loc|call(py_loc, "http_post", arg1, arg2)}
