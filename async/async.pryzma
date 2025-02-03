@@ -1,5 +1,5 @@
 
-/def_loc{py_loc = dir(interpreter_path) + "/async.py"}
+/def_loc{py_loc = dir(interpreter_path) + "/packages/async/async.py"}
 
 /async{@def_loc|call(py_loc, "aasync", arg1, arg2)}
 
