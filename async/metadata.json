@@ -1,0 +1,1 @@
+{"name": "async", "version": "1.0.0", "files": ["async.pryzma", "async.py"], "author": "Igor Cielniak", "description": "Shitty async library for Pryzma programming language.", "license": "MIT"}
