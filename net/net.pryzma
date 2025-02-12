@@ -1,8 +1,8 @@
 
-/def_loc{py_loc = dir(interpreter_path) + "/packages/net/net.py"}
+/net.def_loc{py_loc = dir(interpreter_path) + "/packages/net/net.py"}
 
-/ping{arg1 = args[0]|@def_loc|call(py_loc, "ping", arg1)}
+/ping{arg1 = args[0]|@net.def_loc|call(py_loc, "ping", arg1)}
 
-/download{arg1 = args[0]|@def_loc|call(py_loc, "download", arg1)}
+/download{arg1 = args[0]|@net.def_loc|call(py_loc, "download", arg1)}
 
-/http_post{arg1 = args[0]|arg2 = args[1]|@def_loc|call(py_loc, "http_post", args1, arg2)}
+/http_post{arg1 = args[0]|arg2 = args[1]|@net.def_loc|call(py_loc, "http_post", args1, arg2)}
