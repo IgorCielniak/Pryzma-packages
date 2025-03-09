@@ -1,0 +1,1 @@
+{"name": "math", "version": "1.0.0", "files": ["math.pryzma"], "author": "Igor Cielniak", "description": "Math library for Pryzma programming language.", "license": "MIT"}
