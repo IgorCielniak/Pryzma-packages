@@ -1,5 +1,5 @@
 
-/net.def_loc{py_loc = dir(interpreter_path) + "/packages/net/net.py"}
+/net.def_loc{py_loc = dirname(interpreter_path) + "/packages/net/net.py"}
 
 /ping{arg1 = args[0]|@net.def_loc|call(py_loc, "ping", arg1)}
 
