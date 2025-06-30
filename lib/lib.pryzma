@@ -1,7 +1,0 @@
-/startswith{split_arg1 = split(args[0])|arg1 = split_arg1[0]|if (arg1==args[1]).(result = "True")|if (arg1!=args[1]).(result = "False")}
-/endswith{split_arg1 = split(args[0])|arg_len = len(split_arg1)|arg1 = split_arg1[arg_len- 1]|if (arg1==args[1]).(result = "True")|if (arg1!=args[1]).(result = "False")}
-
-/startswithword{split_arg1 = splitby(" ", args[0])|arg1 = split_arg1[0]|if (arg1==args[1]).(result = "True")|if (arg1!=args[1]).(result = "False")}
-
-/endswithword{split_arg1 = splitby(" ", args[0])|arg_len = len(split_arg1)|arg1 = split_arg1[arg_len- 1]|if (arg1==args[1]).(result = "True")|if (arg1!=args[1]).(result = "False")}
-
