@@ -1,0 +1,1 @@
+{"name": "mem", "version": "1.0.0", "files": ["mem.pryzma"], "author": "Igor Cielniak", "description": "Library providing basic functions for interacting with the manual memory", "license": "MIT"}

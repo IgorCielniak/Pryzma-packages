@@ -1,0 +1,57 @@
+/write_str{
+    addr = args[0]
+    data = args[1]
+    for(i, 0:len(data)){
+        write(addr + i, ascii(data[i]))
+    }
+    write(addr+len(data), 0)
+}
+
+
+
+/read_str{
+    addr = args[0]
+    s = ""
+    b = read(addr)
+    while(b != 0){
+        s += char(b)
+        addr += 1
+        b = read(addr)
+    }
+    return s
+}
+
+
+/strcpy{
+    src = args[0]
+    dst = args[1]
+    i = 0
+    b = read(src + i)
+    while(b != 0){
+        write(dst + i, b)
+        i += 1
+        b = read(src + i)
+    }
+    write(dst + i, 0)
+}
+
+/strcat{
+    dst = args[0]
+    src = args[1]
+
+    i = 0
+    while(read(dst + i) != 0){
+        i += 1
+    }
+
+    j = 0
+    b = read(src + j)
+    while(b != 0){
+        write(dst + i, b)
+        i += 1
+        j += 1
+        b = read(src + j)
+    }
+
+    write(dst + i, 0)
+}
