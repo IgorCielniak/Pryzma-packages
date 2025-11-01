@@ -1,0 +1,197 @@
+/on_import{
+    ErrorKeywordDeleted = 1
+    InvalidFunctionDefinition = 2
+    FunctionNotDefined = 3
+    TooMuchArgumentsForPlusEquals = 4
+    TooMuchArgumentsForMinusEquals = 5
+    InvalidNumberOfArgumentsForWrite = 6
+    InvalidMoveInstructionSyntax = 7
+    InvalidIndexForMoveInstruction = 8
+    InvalidSwapInstructionSyntax = 9
+    InvalidIndexForSwapInstruction = 10
+    InvalidStatement = 11
+    UnknownError = 12
+    ModuleDoesNotHaveStartFunction = 13
+    ErrorLoadingModule = 14
+    CannotDecrementNonIntegerVariable = 15
+    VariableNotFoundForDecrementFunction = 16
+    CannotIncrementNonIntegerVariable = 17
+    VariableNotFoundForIncrementFunction = 18
+    ErrorWritingToFile = 19
+    InvalidNumberOfArgumentsForReplaceFunction = 20
+    InvalidNumberOfArgumentsForResplitFunction = 21
+    FirstArgumentOfStringMustBeString = 22
+    SecondArgumentOfResplitMustBeString = 23
+    InvalidRegexPattern = 24
+    InFunctionError = 25
+    InvalidNumberOfArgumentsForSplitbyFunction = 26
+    FileNotFound = 27
+    InvalidNumberOfArgumentsForIndexFunction = 28
+    ValueNotFoundInListForIndexFunction = 29
+    VariableIsNotAListForIndexFunction = 30
+    ListNotDefinedForAll = 31
+    UnknownVariableOrExpression = 32
+    InvalidRangeExpressionForLoop = 33
+    FileNotFoundForUseFunction = 34
+    ListDoesNotExistForAppendFunction = 35
+    IndexOutOfRangeForPopFunction = 36
+    ListDoesNotExistForPopFunction = 37
+    InvalidNumberOfArgumentsForCall = 38
+    InvalidCallStatementFormat = 39
+    VariableNotFoundInCurrentScope = 40
+    ReferencedVariableNoLongerExists = 41
+    ReferencedFunctionNoLongerExists = 42
+    OverlapingNamesOfStructInstance = 43
+    NonExistingFunctionPasedAsArgumentToPatch = 44
+    ListNotFoundForTheForeachFunction = 45
+    UsingStatementCanOnlyBeUsedWithStructInstances = 46
+}
+
+/err_to_str{
+    err_code = args[0]
+    try{
+        match(err_code){
+            case(1){
+                return "Error keyword deleted"
+            }
+            case(2){
+                return "Invalid function definition"
+            }
+            case(3){
+                return "Function not defined"
+            }
+            case(4){
+                return "Too much arguments for increment operator"
+            }
+            case(5){
+                return "Too much arguments for decrement operator"
+            }
+            case(6){
+                return "Invalid number of arguments for write()"
+            }
+            case(7){
+                return "Invalid move() instruction syntax"
+            }
+            case(8){
+                return "Invalid index for move() instruction"
+            }
+            case(9){
+                return "Invalid swap() instruction syntax"
+            }
+            case(10){
+                return "Invalid index for swap() instruction"
+            }
+            case(11){
+                return "Invalid statement"
+            }
+            case(12){
+                return "Unknown error"
+            }
+            case(13){
+                return "Module does not have a start function"
+            }
+            case(14){
+                return "Error loading module"
+            }
+            case(15){
+                return "Cannot decrement non integer variable"
+            }
+            case(16){
+                return "Variable not found for decrement function"
+            }
+            case(17){
+                return "Cannot increment non integer variable"
+            }
+            case(18){
+                return "Variable not found for increment function"
+            }
+            case(19){
+                return "Error writing to file"
+            }
+            case(20){
+                return "Invalid number of arguments for replace function"
+            }
+            case(21){
+                return "Invalid number of arguments for resplit function"
+            }
+            case(22){
+                return "The first argument of resplit() must be a string (regex pattern)"
+            }
+            case(23){
+                return "The second argument of resplit() must be a string"
+            }
+            case(24){
+                return "Invalid regex pattern"
+            }
+            case(25){
+                return "in() function error"
+            }
+            case(26){
+                return "Invalid number of arguments for splitby function"
+            }
+            case(27){
+                return "File not found"
+            }
+            case(28){
+                return "Invalid number of arguments for index function"
+            }
+            case(29){
+                return "Value not found in list for index function"
+            }
+            case(30){
+                return "Variable is not a list for index function"
+            }
+            case(31){
+                return "List not defined for all()"
+            }
+            case(32){
+                return "Unknown variable or expression"
+            }
+            case(33){
+                return "Invalid range expression for loop"
+            }
+            case(34){
+                return "File not found for use function"
+            }
+            case(35){
+                return "List does not exist for append function"
+            }
+            case(36){
+                return "Index out of range for pop function"
+            }
+            case(37){
+                return "List does not exist for pop function"
+            }
+            case(38){
+                return "Invalid number of arguments for call"
+            }
+            case(39){
+                return "Invalid call statement format"
+            }
+            case(40){
+                return "Variable not found in current scope"
+            }
+            case(41){
+                return "Referenced variable no longer exists"
+            }
+            case(42){
+                return "Referenced function no longer exists"
+            }
+            case(43){
+                return "Overlaping names of struct instance and one of variables used for destructuring"
+            }
+            case(44){
+                return "Name of a non existing function pased as an argument to patch()"
+            }
+            case(45){
+                return "List not found for the foreach function"
+            }
+            case(46){
+                return "using statement can only be used with struct instances"
+            }
+            case(_){
+                return "Unknown error code"
+            }
+        }
+    }
+}
