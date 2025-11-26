@@ -5,4 +5,4 @@
 
 /download{arg1 = args[0]|@net.def_loc|call(py_loc, "download", arg1)}
 
-/http_post{arg1 = args[0]|arg2 = args[1]|@net.def_loc|call(py_loc, "http_post", args1, arg2)}
+/http_post{arg1 = args[0]|arg2 = args[1]|@net.def_loc|call(py_loc, "http_post", pyeval("self"), arg1, arg2)}
